@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Legal Codes - LPP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">LPP</a>
+      <ul class="nav-links">
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="browse.html">Browse Codes</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="browse-container">
+    <h1>Browse Legal Codes</h1>
+    <input type="text" id="searchBar" placeholder="Search legal codes..." oninput="filterCodes()">
+    <ul id="legalCodes">
+      <!-- Dynamically populated -->
+      <li data-title="Civil Code of France">Civil Code of France</li>
+      <li data-title="Criminal Code of the Philippines">Criminal Code of the Philippines</li>
+      <li data-title="Constitution of the USA">Constitution of the USA</li>
+    </ul>
+  </main>
+
+  <script src="scripts/browse.js"></script>
+</body>
+</html>

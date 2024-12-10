@@ -1,0 +1,31 @@
+/* Browse Page */
+.browse-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .browse-container input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .browse-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .browse-container li {
+    padding: 0.5rem;
+    background-color: #f4f4f9;
+    margin: 0.5rem auto;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
