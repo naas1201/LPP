@@ -1,0 +1,56 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files and directories
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Compiled files and cache
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Test outputs
+coverage/
+.nyc_output/
+
+# Linting output
+eslintcache
+
+# Dependency directories
+bower_components/
+
+# Other
+*.log
+*.pid
+*.seed
+*.pid.lock
