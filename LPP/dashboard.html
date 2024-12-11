@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Dashboard - LPP</title>
+  <title>Dashboard - LPP</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,12 +19,40 @@
   
   <main class="dashboard-container">
     <h1>Welcome, User!</h1>
-    <h2>Your Saved Legal Codes</h2>
-    <ul id="savedCodes">
-      <!-- User's saved codes will be listed here -->
-      <li>Civil Code of France</li>
-      <li>Criminal Code of the Philippines</li>
-    </ul>
+    <p id="codesCount">Total Saved Codes: 0</p>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchSavedCodes" placeholder="Search your saved codes..." />
+
+    <!-- Add New Code -->
+    <button id="addNewCodeButton">Add New Code</button>
+    <div id="newCodeForm" style="display: none;">
+      <input type="text" id="newCodeTitle" placeholder="Code Title" />
+      <select id="newCodeCategory">
+        <option value="civil">Civil</option>
+        <option value="criminal">Criminal</option>
+      </select>
+      <button id="submitNewCode">Add Code</button>
+    </div>
+
+    <!-- Legal Code Categories -->
+    <section>
+      <h2>Civil</h2>
+      <ul id="civilCodes"></ul>
+    </section>
+
+    <section>
+      <h2>Criminal</h2>
+      <ul id="criminalCodes"></ul>
+    </section>
+
+    <!-- Export Saved Codes -->
+    <button id="exportCodes">Export Saved Codes</button>
+
+    <!-- Dark Mode Toggle -->
+    <button id="toggleDarkMode">Toggle Dark Mode</button>
   </main>
+
+  <script src="scripts/dashboard.js"></script>
 </body>
 </html>
