@@ -5,10 +5,47 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-  }
-  
-  /* Auth Container */
-  .auth-container {
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Auth Container */
+.auth-container {
     width: 100%;
     max-width: 400px;
     margin: 50px auto;
@@ -17,79 +54,79 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-  }
-  
-  .auth-container h1 {
+}
+
+.auth-container h1 {
     margin-bottom: 20px;
     color: #4CAF50;
-  }
-  
-  .auth-container form {
+}
+
+.auth-container form {
     display: flex;
     flex-direction: column;
-  }
-  
-  .auth-container input {
+}
+
+.auth-container input {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
-  
-  .auth-container button {
+}
+
+.auth-container button {
     padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .auth-container button:hover {
+}
+
+.auth-container button:hover {
     background-color: #45a049;
-  }
-  
-  .auth-container p {
+}
+
+.auth-container p {
     margin-top: 20px;
-  }
-  
-  .auth-container a {
+}
+
+.auth-container a {
     color: #4CAF50;
     text-decoration: none;
-  }
-  
-  .auth-container a:hover {
+}
+
+.auth-container a:hover {
     text-decoration: underline;
-  }
-  
-  /* Dashboard Container */
+}
+
+/* Dashboard Container */
 .dashboard-container {
     padding: 2rem;
     text-align: center;
-  }
-  
-  .dashboard-container h1 {
+}
+
+.dashboard-container h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #4CAF50;
-  }
-  
-  .dashboard-container h2 {
+}
+
+.dashboard-container h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #333;
     font-size: 1.8rem;
-  }
-  
-  /* Saved Legal Codes */
-  .dashboard-container ul {
+}
+
+/* Saved Legal Codes */
+.dashboard-container ul {
     list-style: none;
     padding: 0;
     margin: 0 auto;
     max-width: 600px;
-  }
-  
-  .dashboard-container li {
+}
+
+.dashboard-container li {
     padding: 1rem;
     background-color: #f9f9f9;
     margin-bottom: 1rem;
@@ -100,62 +137,77 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .dashboard-container li:hover {
+}
+
+.dashboard-container li:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  .dashboard-container .code-title {
+}
+
+.dashboard-container .code-title {
     font-size: 1.2rem;
     font-weight: bold;
-  }
-  
-  .dashboard-container .action-buttons {
+}
+
+.dashboard-container .action-buttons {
     display: flex;
     gap: 0.5rem;
-  }
-  
-  .dashboard-container button {
+}
+
+.dashboard-container button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
     transition: background-color 0.3s;
-  }
-  
-  .dashboard-container .btn-edit {
+}
+
+.dashboard-container .btn-edit {
     background-color: #4CAF50;
     color: white;
-  }
-  
-  .dashboard-container .btn-edit:hover {
+}
+
+.dashboard-container .btn-edit:hover {
     background-color: #45a049;
-  }
-  
-  .dashboard-container .btn-delete {
+}
+
+.dashboard-container .btn-delete {
     background-color: #e74c3c;
     color: white;
-  }
-  
-  .dashboard-container .btn-delete:hover {
+}
+
+.dashboard-container .btn-delete:hover {
     background-color: #c0392b;
-  }
-  
-  @keyframes fadeOut {
+}
+
+/* Animations */
+@keyframes fadeOut {
     from {
-      opacity: 1;
-      transform: scale(1);
+        opacity: 1;
+        transform: scale(1);
     }
     to {
-      opacity: 0;
-      transform: scale(0.95);
+        opacity: 0;
+        transform: scale(0.95);
     }
-  }
-  
-  .dashboard-container li.removed {
+}
+
+.dashboard-container li.removed {
     animation: fadeOut 0.5s forwards;
-  }
-  
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .navbar {
+    background-color: #555;
+}
+
+body.dark-mode .dashboard-container li {
+    background-color: #444;
+    color: #fff;
+}
